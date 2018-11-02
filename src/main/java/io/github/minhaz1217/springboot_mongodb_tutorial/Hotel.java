@@ -1,6 +1,5 @@
 package io.github.minhaz1217.springboot_mongodb_tutorial;
 
-import javafx.scene.control.ListView;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
