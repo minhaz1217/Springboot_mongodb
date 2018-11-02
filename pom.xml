@@ -42,16 +42,12 @@
 	</dependencies>
 
 	<build>
-		<pluginRepositories>
-			<pluginRepository>
-				<id>spring-snapshots</id>
-				<url>https://repo.spring.io/snapshot</url>
-			</pluginRepository>
-			<pluginRepository>
-				<id>spring-milestones</id>
-				<url>https://repo.spring.io/milestone</url>
-			</pluginRepository>
-		</pluginRepositories>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
 	</build>
 
 
