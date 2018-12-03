@@ -11,6 +11,7 @@ import java.util.List;
 
 @Component
 public class DbSeeder implements CommandLineRunner{
+
     protected HotelRepository hotelRepository;
 
     public DbSeeder(HotelRepository hotelRepository) {
@@ -19,6 +20,7 @@ public class DbSeeder implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
+
         Hotel marriot = new Hotel(
                 "Marriot",
                 130,
@@ -48,6 +50,8 @@ public class DbSeeder implements CommandLineRunner{
         this.hotelRepository.save(marriot);
         this.hotelRepository.save(ibis);
         this.hotelRepository.save(sofitel);
+
         System.out.println("DB LOADED");
     }
+
 }
