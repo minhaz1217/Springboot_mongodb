@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface HotelRepository extends MongoRepository<Hotel,String>, QuerydslPredicateExecutor<Hotel> {
+public interface HotelRepository extends MongoRepository<Hotel,String>{
     Hotel findHotelById(String id);
     List<Hotel> findByPricePerNightLessThan(int max);
 
